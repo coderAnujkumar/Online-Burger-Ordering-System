@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - BurgerHub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>💳 Payment Details</h1>
+</header>
+<main>
+    <form id="paymentForm">
+        <label>Name:</label>
+        <input type="text" id="name" required />
+
+        <label>Email:</label>
+        <input type="email" id="email" required />
+
+        <label>Address:</label>
+        <textarea id="address" rows="2" cols="20" style="resize:none;" required></textarea>
+
+        <h3>Choose Payment Method:</h3>
+        <label><input type="radio" name="payment" value="Credit Card" /> Credit Card</label>
+        <label><input type="radio" name="payment" value="UPI" /> UPI</label>
+        <label><input type="radio" name="payment" value="Cash on Delivery" /> COD</label>
+
+        <button id="placeOrderBtn">Place Order</button>
+    </form>
+</main>
+<script src="js/payment.js"></script>
+</body>
+</html>

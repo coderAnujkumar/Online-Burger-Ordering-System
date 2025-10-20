@@ -1,0 +1,21 @@
+{
+  "name": "burgerhub",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7"
+  },
+  "description": "An online burger ordering website built with Node.js and Express.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
