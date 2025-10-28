@@ -1,0 +1,89 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BurgerHub — Employee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h2>Employee Panel</h2>
+    <div>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Add New Burger</h3>
+      <form id="addBurgerForm" enctype="multipart/form-data">
+        <label>Name</label>
+        <input id="bname" name="name" required />
+      
+        <label>Description</label>
+        <input id="bdesc" name="description" />
+      
+        <label>Price (INR)</label>
+        <input id="bprice" name="price" type="number" required min="0" />
+      
+        <label>Image File</label>
+        <input id="bimage" name="image" type="file" accept="image/*" />
+      
+        <button type="submit">Add Burger</button>
+      </form>
+      
+    </section>
+
+    <section class="card" id="menuSection">
+      <h3>Menu</h3>
+      <div id="menuList" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="/js/employee.js"></script>
+</body>
+</html> -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BurgerHub — Employee</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h2>Employee Panel</h2>
+    <div><button id="logoutBtn">Logout</button></div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Add New Burger</h3>
+      <form id="addBurgerForm" enctype="multipart/form-data">
+        <label>Name</label>
+        <input id="bname" name="name" required />
+
+        <label>Description</label>
+        <input id="bdesc" name="description" />
+
+        <label>Price (INR)</label>
+        <input id="bprice" name="price" type="number" required min="0" />
+
+        <label>Upload Image</label>
+        <input id="bimage" name="image" type="file" accept="image/*" />
+
+        <button type="submit">Add Burger</button>
+      </form>
+    </section>
+
+    <section class="card" id="menuSection">
+      <h3>Menu</h3>
+      <div id="menuList" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="/js/employee.js"></script>
+</body>
+</html>

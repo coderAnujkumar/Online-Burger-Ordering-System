@@ -1,40 +1,25 @@
-let isRegister = false;
+// login.js
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const role = document.getElementById("role").value;
 
-document.getElementById("toggleForm").addEventListener("click", e => {
-    e.preventDefault();
-    isRegister = !isRegister;
-    document.getElementById("formTitle").textContent = isRegister ? "Register" : "Login";
-    document.getElementById("loginBtn").textContent = isRegister ? "Register" : "Login";
-});
-
-document.getElementById("loginBtn").addEventListener("click", async () => {
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    if (!email || !password) return alert("Please fill in all fields!");
-
-    const url = isRegister ? "/api/register" : "/api/login";
-
-    try {
-        const res = await fetch(url, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, password }),
-        });
-        const data = await res.json();
-        alert(data.message);
-
-        if (res.ok && !isRegister) {
-            // Successful login
-            localStorage.setItem("user", JSON.stringify({ email }));
-            window.location.href = "index.html";
-        } else if (res.ok && isRegister) {
-            // Successful registration
-            isRegister = false;
-            document.getElementById("formTitle").textContent = "Login";
-            document.getElementById("loginBtn").textContent = "Login";
-        }
-    } catch (err) {
-        console.error(err);
-        alert("Server error. Try again.");
+  try {
+    const res = await fetch("/api/login", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email, password, role })
+    });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.message || "Login failed");
+    localStorage.setItem("bh_user", JSON.stringify(data.user));
+    if (data.user.role === "employee") {
+      location.href = "/employee.html";
+    } else {
+      location.href = "/home.html";
     }
+  } catch (err) {
+    alert("Login failed: " + err.message);
+  }
 });

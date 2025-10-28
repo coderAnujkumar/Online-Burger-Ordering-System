@@ -1,19 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Add-ons - BurgerHub</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <title>BurgerHub — Add-ons</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-<header>
-    <h1>🍟 Choose Your Add-ons</h1>
-</header>
-<main>
-    <div class="addon-container" id="addonList"></div>
-    <button id="continueAddons">Continue ➡️</button>
-</main>
-<script src="js/addons.js"></script>
+  <header class="topbar">
+    <h2>Add-ons</h2>
+    <div>
+      <button id="backBtn">Back</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Choose add-ons per burger</h3>
+      <div id="selectedBurgersList"></div>
+      <div class="sticky-total">
+        <div>Total: ₹<span id="grandTotal">0</span></div>
+        <div>
+          <button id="toConfirmBtn">Continue to Confirmation</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/addons.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BurgerHub — Register</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="center">
+    <div class="card">
+      <h1>Create an Account</h1>
+      <form id="registerForm">
+        <label>Name</label>
+        <input type="text" id="name" required placeholder="Your name" />
+
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="example@burgerhub.com" />
+
+        <label>Password</label>
+        <input type="password" id="password" required placeholder="Choose a password" />
+
+        <label>Role</label>
+        <select id="role">
+          <option value="customer">Customer</option>
+          <option value="employee">Employee</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+      <p class="muted small">
+        Already have an account? <a href="index.html">Login</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="/js/register.js"></script>
+</body>
+</html>

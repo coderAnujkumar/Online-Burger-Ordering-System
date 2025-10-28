@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Burger",
+    "description": "Juicy beef patty, lettuce, tomato, special sauce.",
+    "price": 199,
+    "image": "/images/burger1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cheese Lover",
+    "description": "Double cheese, pickles and house sauce.",
+    "price": 249,
+    "image": "/images/burger1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "sezwan burger",
+    "description": "Juicy beef patty, lettuce, tomato, special sauce.  with Sezwan",
+    "price": 250,
+    "image": "/images/burger1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "sezwan burger",
+    "description": "Juicy beef patty, lettuce, tomato, special sauce.  with Sezwan",
+    "price": 250,
+    "image": "/images/1761642721962-burger2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Veg Snacker",
+    "description": "",
+    "price": 240,
+    "image": "/images/1761644670988-1761642721962-burger2.jpg"
+  }
+]

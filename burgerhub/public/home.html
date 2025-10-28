@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BurgerHub — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h2>BurgerHub</h2>
+    <div class="header-actions">
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h3>Menu</h3>
+      <div id="burgerGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- sliding cart panel -->
+  <aside id="cartPanel" class="cart-panel">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <div>Total: ₹<span id="cartTotal">0</span></div>
+      <div>
+        <button id="continueAddonsBtn">Proceed to Add-ons</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="/js/home.js"></script>
+</body>
+</html>

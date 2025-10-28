@@ -1,34 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payment - BurgerHub</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <title>BurgerHub — Payment</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-<header>
-    <h1>💳 Payment Details</h1>
-</header>
-<main>
-    <form id="paymentForm">
-        <label>Name:</label>
-        <input type="text" id="name" required />
+  <header class="topbar">
+    <h2>Payment</h2>
+  </header>
 
-        <label>Email:</label>
-        <input type="email" id="email" required />
+  <main class="container">
+    <section class="card">
+      <h3>Select Payment Method</h3>
+      <div class="payment-options">
+        <button class="payBtn" data-method="card">Credit/Debit Card</button>
+        <button class="payBtn" data-method="upi">UPI</button>
+        <button class="payBtn" data-method="cod">Cash on Delivery</button>
+      </div>
 
-        <label>Address:</label>
-        <textarea id="address" rows="2" cols="20" style="resize:none;" required></textarea>
+      <div id="status" style="margin-top: 20px;"></div>
+    </section>
+  </main>
 
-        <h3>Choose Payment Method:</h3>
-        <label><input type="radio" name="payment" value="Credit Card" /> Credit Card</label>
-        <label><input type="radio" name="payment" value="UPI" /> UPI</label>
-        <label><input type="radio" name="payment" value="Cash on Delivery" /> COD</label>
-
-        <button id="placeOrderBtn">Place Order</button>
-    </form>
-</main>
-<script src="js/payment.js"></script>
+  <script src="/js/payment.js"></script>
 </body>
 </html>

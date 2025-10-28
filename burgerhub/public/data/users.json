@@ -1,0 +1,56 @@
+[
+  {
+    "email": "employee@burgerhub.com",
+    "password": "employee123",
+    "role": "employee",
+    "name": "Employee"
+  },
+  {
+    "email": "customer@burgerhub.com",
+    "password": "customer123",
+    "role": "customer",
+    "name": "Customer"
+  },
+  {
+    "name": "Anuj Kumar",
+    "email": "anuj.dtu.a11@gmail.com",
+    "password": "1234",
+    "role": "customer"
+  },
+  {
+    "name": "aniket",
+    "email": "aniket@gmail.com",
+    "password": "1234",
+    "role": "employee"
+  },
+  {
+    "name": "chinmay",
+    "email": "chinmay@gmail.com",
+    "password": "1234",
+    "role": "employee"
+  },
+  {
+    "name": "rohit",
+    "email": "Rohit@gmail.com",
+    "password": "1234",
+    "role": "customer"
+  },
+  {
+    "name": "needhi",
+    "email": "needhi@gmail.com",
+    "password": "1234",
+    "role": "employee"
+  },
+  {
+    "name": "himnashu",
+    "email": "himnashu@gmail.com",
+    "password": "1234",
+    "role": "customer"
+  },
+  {
+    "name": "Rohit2612",
+    "email": "rohittaksande26@gmail.com",
+    "password": "Rohit@123",
+    "role": "customer"
+  }
+]
